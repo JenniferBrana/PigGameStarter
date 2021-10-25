@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "/media/nuxoll/Extra Storage/AndroidStudioProjects/PigGameStarter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/Home/AndroidStudioProjects/PigGameStarter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/media/nuxoll/Extra Storage/AndroidStudioProjects/PigGameStarter/app/src/main/res/values/strings.xml",
+                    "source": "/Users/Home/AndroidStudioProjects/PigGameStarter/app/src/main/res/values/color.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,92,129",
+                        "endColumns": "36,36,37",
+                        "endOffsets": "87,124,162"
+                    }
+                },
+                {
+                    "source": "/Users/Home/AndroidStudioProjects/PigGameStarter/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "11,2,7,17,18,19,14,3,20,4,8,12,13,21,10,6,15,9,15,5",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,89,4",
@@ -21,34 +31,7 @@
                     }
                 },
                 {
-                    "source": "/media/nuxoll/Extra Storage/AndroidStudioProjects/PigGameStarter/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "58",
-                        "endOffsets": "71"
-                    },
-                    "to": {
-                        "startLines": "31",
-                        "startColumns": "4",
-                        "startOffsets": "1612",
-                        "endColumns": "57",
-                        "endOffsets": "1665"
-                    }
-                },
-                {
-                    "source": "/media/nuxoll/Extra Storage/AndroidStudioProjects/PigGameStarter/app/src/main/res/values/color.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,92,129",
-                        "endColumns": "36,36,37",
-                        "endOffsets": "87,124,162"
-                    }
-                },
-                {
-                    "source": "/media/nuxoll/Extra Storage/AndroidStudioProjects/PigGameStarter/app/src/main/res/values/dimen.xml",
+                    "source": "/Users/Home/AndroidStudioProjects/PigGameStarter/app/src/main/res/values/dimen.xml",
                     "from": {
                         "startLines": "7,2,4,3,6,5",
                         "startColumns": "4,4,4,4,4,4",
@@ -62,6 +45,23 @@
                         "startOffsets": "167,218,272,314,369,420",
                         "endColumns": "50,53,41,54,50,49",
                         "endOffsets": "213,267,309,364,415,465"
+                    }
+                },
+                {
+                    "source": "/Users/Home/AndroidStudioProjects/PigGameStarter/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "58",
+                        "endOffsets": "71"
+                    },
+                    "to": {
+                        "startLines": "31",
+                        "startColumns": "4",
+                        "startOffsets": "1612",
+                        "endColumns": "57",
+                        "endOffsets": "1665"
                     }
                 }
             ]

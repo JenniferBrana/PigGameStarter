@@ -61,6 +61,45 @@ public class PigHumanPlayer extends GameHumanPlayer implements OnClickListener {
     @Override
     public void receiveInfo(GameInfo info) {
         //TODO You will implement this method to receive state objects from the game
+
+
+        //check info object type correct
+        if(!(info instanceof PigGameState)){
+            flash(Color.RED,20);
+            return;
+        }
+
+        PigGameState state = new PigGameState((PigGameState) info);
+
+        //display scores I think
+        if(this.playerNum == 0 ){
+            playerScoreTextView.setText("" + state.getScore0());
+            oppScoreTextView.setText("" + state.getScore1());
+        }
+        else{
+            playerScoreTextView.setText("" + state.getScore0());
+            oppScoreTextView.setText("" + state.getScore1());
+        }
+        turnTotalTextView.setText("" + state.getRunningScore());
+
+        if (state.getDieVal()==1) {
+            dieImageButton.setImageResource(R.drawable.face1);
+        }
+        else if (state.getDieVal()==2){
+            dieImageButton.setImageResource(R.drawable.face2);
+        }
+        else if (state.getDieVal()==3){
+            dieImageButton.setImageResource(R.drawable.face3);
+        }
+        else if (state.getDieVal()==4){
+            dieImageButton.setImageResource(R.drawable.face4);
+        }
+        else if (state.getDieVal()==5){
+            dieImageButton.setImageResource(R.drawable.face5);
+        }
+        else if (state.getDieVal()==6){
+            dieImageButton.setImageResource(R.drawable.face6);
+        }
     }//receiveInfo
 
     /**
@@ -72,6 +111,12 @@ public class PigHumanPlayer extends GameHumanPlayer implements OnClickListener {
      */
     public void onClick(View button) {
         //TODO  You will implement this method to send appropriate action objects to the game
+        if(button instanceof ImageButton){
+            game.sendAction(new PigRollAction(this));
+        }
+        else{
+            game.sendAction(new PigHoldAction(this));
+        }
     }// onClick
 
     /**
