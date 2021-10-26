@@ -47,12 +47,12 @@ public class PigComputerPlayer extends GameComputerPlayer {
         if(rand == 0){
             PigHoldAction action = new PigHoldAction(this);
             game.sendAction(action);
-            //sleep(2000);
+            sleep(2000);
         }
         else{
             PigRollAction action = new PigRollAction(this);
             game.sendAction(action);
-            //sleep(2000);
+            sleep(2000);
         }
     }//receiveInfo
 

@@ -77,9 +77,10 @@ public class PigHumanPlayer extends GameHumanPlayer implements OnClickListener {
             oppScoreTextView.setText("" + state.getScore1());
         }
         else{
-            playerScoreTextView.setText("" + state.getScore0());
-            oppScoreTextView.setText("" + state.getScore1());
+            playerScoreTextView.setText("" + state.getScore1());
+            oppScoreTextView.setText("" + state.getScore0());
         }
+
         turnTotalTextView.setText("" + state.getRunningScore());
 
         if (state.getDieVal()==1) {
